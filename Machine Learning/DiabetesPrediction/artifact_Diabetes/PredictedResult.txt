@@ -1,0 +1,39 @@
+
+
+
+Test Data :
+-----------------------------------------------------------------
+     Pregnancies  Glucose  BloodPressure  ...  DiabetesPedigreeFunction  Age  Outcome
+86     13.000000    106.0      72.000000  ...                     0.178   45        0
+644     3.000000    103.0      72.000000  ...                     0.730   27        0
+457     5.000000     86.0      68.000000  ...                     0.364   24        0
+8       2.000000    197.0      70.000000  ...                     0.158   53        1
+77      5.000000     95.0      72.000000  ...                     0.370   27        0
+307     3.845052    137.0      68.000000  ...                     0.143   21        0
+23      9.000000    119.0      80.000000  ...                     0.263   29        1
+306    10.000000    161.0      68.000000  ...                     0.326   47        1
+395     2.000000    127.0      58.000000  ...                     1.600   25        0
+435     3.845052    141.0      69.105469  ...                     0.205   29        1
+
+[10 rows x 9 columns]
+-----------------------------------------------------------------
+Logistic Regression
+Testing Accuracy:90.0
+-----------------------------------------------------------------
+KNN
+Testing Accuracy:80.0
+-----------------------------------------------------------------
+Decision Tree Classifier
+Testing Accuracy:100.0
+-----------------------------------------------------------------
+          Outcome Logistic Regression           KNN Decision Tree Classifier
+86   Non-diabetes        Non-diabetes  Non-diabetes             Non-diabetes
+644  Non-diabetes        Non-diabetes  Non-diabetes             Non-diabetes
+457  Non-diabetes        Non-diabetes  Non-diabetes             Non-diabetes
+8        Diabetes            Diabetes      Diabetes                 Diabetes
+77   Non-diabetes        Non-diabetes  Non-diabetes             Non-diabetes
+307  Non-diabetes        Non-diabetes  Non-diabetes             Non-diabetes
+23       Diabetes        Non-diabetes  Non-diabetes                 Diabetes
+306      Diabetes            Diabetes  Non-diabetes                 Diabetes
+395  Non-diabetes        Non-diabetes  Non-diabetes             Non-diabetes
+435      Diabetes            Diabetes      Diabetes                 Diabetes

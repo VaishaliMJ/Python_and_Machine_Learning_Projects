@@ -1,0 +1,14 @@
+		Zero values in column report
+-----------------------------------------------------------------
+                    ColName  Missing Value Count
+0               Pregnancies                  111
+1                   Glucose                    5
+2             BloodPressure                   35
+3             SkinThickness                  227
+4                   Insulin                  374
+5                       BMI                   11
+6  DiabetesPedigreeFunction                    0
+7                       Age                    0
+Column List with zero values
+['Pregnancies', 'Glucose', 'BloodPressure', 'SkinThickness', 'Insulin', 'BMI']
+Replacing each 0 column values with column mean
