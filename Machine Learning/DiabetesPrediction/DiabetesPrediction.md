@@ -57,11 +57,13 @@ Install the required Python packages before running the project
 	•	Train and evaluate model
 			python3 DiabetesPrediction.py
 ###  Expected Outputs saved in :
-  ####  Expected testing data output :   PredictedResults.txt
+  ####  Expected testing data output :   *PredictedResults.txt*
 ###  Visualisations
-  Confusion Matrix                   :   **ConfusionMatrix.png**
-  Classification Report              :   **classification_report.txt**
-  Feature Importance                 :   **FeatureImportance.png** 
+  Confusion Matrix                   :   *ConfusionMatrix.png*
+  
+  Classification Report              :   *classification_report.txt*
+  
+  Feature Importance                 :   *FeatureImportance.png* 
 
 ###  Model Storage: Model saved as follows
 	-Logistic Regression : artifact_Diabetes/LogisticRegression.joblib
@@ -69,5 +71,5 @@ Install the required Python packages before running the project
 	-Decision Tree : artifact_Diabetes/Decision Tree Classifier.joblib
 
 ###  Author:
-	Vaishali M. Jorwekar
-	Date	:12 Oct 2025
+	#### Vaishali M. Jorwekar
+	#### Date	:12 Oct 2025
