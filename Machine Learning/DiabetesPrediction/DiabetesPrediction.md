@@ -1,4 +1,5 @@
-#  Overview: Developed a health classification system using medical data to predict diabetes
+#  Overview: 
+		  Developed a health classification system using medical data to predict diabetes
           Diabetes Prediction using Logistic Regression and Decision Tree classifier
 
         This project predicts whether a given patient is diabetic  or non-diabetic using “diabetes.csv”
@@ -25,7 +26,7 @@ Install the required Python packages before running the project
 	8.	Age
 
 ###  Target:
-	####  Outcome 
+	   Outcome 
 			0 : Non Diabetic
 			1:  Diabetic
 ###  Workflow:
