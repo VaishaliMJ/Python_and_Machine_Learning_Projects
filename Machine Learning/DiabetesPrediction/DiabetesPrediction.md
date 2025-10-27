@@ -1,4 +1,4 @@
-Overview: Developed a health classification system using medical data to detect diabetes
+#H1Overview: Developed a health classification system using medical data to detect diabetes
           Diabetes Prediction using Logistic Regression and Decision Tree classifier
 
         This project predicts whether a given patient is diabetic  or non-diabetic using “diabetes.csv”
