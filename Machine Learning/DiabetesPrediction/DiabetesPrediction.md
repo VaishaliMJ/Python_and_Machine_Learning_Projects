@@ -1,6 +1,6 @@
 #  Overview: 
 		  Developed a health classification system using medical data to predict diabetes
-          Diabetes Prediction using Logistic Regression and Decision Tree classifier
+          Diabetes Prediction using Logistic Regression,KNN and Decision Tree classifier
 
         This project predicts whether a given patient is diabetic  or non-diabetic using “diabetes.csv”
           It Follows  industrial best practices  by
