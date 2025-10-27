@@ -71,5 +71,5 @@ Install the required Python packages before running the project
 	-Decision Tree : artifact_Diabetes/Decision Tree Classifier.joblib
 
 ###  Author:
-	#### Vaishali M. Jorwekar
-	#### Date	:12 Oct 2025
+	 Vaishali M. Jorwekar
+	 Date	:12 Oct 2025
