@@ -2,7 +2,7 @@
 		  Developed a health classification system using medical data to predict diabetes
           Diabetes Prediction using Logistic Regression and Decision Tree classifier
 
-        This project predicts whether a given patient is diabetic  or non-diabetic using *“diabetes.csv”*
+        This project predicts whether a given patient is diabetic  or non-diabetic using “diabetes.csv”
           It Follows  industrial best practices  by
           	•	Automating preprocessing with Pipeline
           	•	Scaling the dataset values using StandardScalar
@@ -13,7 +13,7 @@
 ##  Dependencies:
 Install the required Python packages before running the project
 
-	*''pip install pandas numpy matplotlib scikit-learn joblib''*
+	pip install pandas numpy matplotlib scikit-learn joblib
 
 ##  DataSet information:
 ###  Features:
@@ -28,8 +28,8 @@ Install the required Python packages before running the project
 
 ###  Target:
 	   Outcome 
-			0 : Non Diabetic
-			1:  Diabetic
+			0 :  Non Diabetic
+			1 :  Diabetic
 ###  Workflow:
 ###  Data Preparation:
 		•	Convert .csv file into data frame
@@ -52,9 +52,9 @@ Install the required Python packages before running the project
 		•	Load models for future predictions without retraining
 
 ####  Running the Project:
-	•	**Load data set (only once)**
+	•	Load data set (only once)
 			pandas.read_csv(file_path)
-	•	**Train and evaluate model**
+	•	Train and evaluate model
 			python3 DiabetesPrediction.py
 ###  Expected Outputs saved in :
   ####  Expected testing data output :   PredictedResults.txt
@@ -64,10 +64,10 @@ Install the required Python packages before running the project
   Feature Importance                 :   **FeatureImportance.png** 
 
 ###  Model Storage: Model saved as follows
-	-Logistic Regression : *artifact_Diabetes/LogisticRegression.joblib*
-	-KNN : *artifact_Diabetes/KNN.joblib*
+	-Logistic Regression : artifact_Diabetes/LogisticRegression.joblib
+	-KNN : artifact_Diabetes/KNN.joblib
 	-Decision Tree : artifact_Diabetes/Decision Tree Classifier.joblib
 
 ###  Author:
-	**Vaishali M. Jorwekar**
-	**Date	:12 Oct 2025**
+	Vaishali M. Jorwekar
+	Date	:12 Oct 2025
