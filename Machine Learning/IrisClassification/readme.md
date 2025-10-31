@@ -1,12 +1,18 @@
 # Overview:
-  Implemented classic ML classification on the Iris dataset using Decision Tree and KNN,using dataset Iris.csv
-  This project predicts in which category Iris flower falls
-          It Follows  industrial best practices  by
-          	•	Automating preprocessing with Pipeline
-          	•	Scaling the dataset values using StandardScalar
-          	•	Used Decision Tree and KNN
-          	•	Saving and losing trained model using job lib
-          	•	Provided data visualisation 
+  Implemented classic ML classification on the Iris dataset using Decision Tree and KNN,using dataset Iris.csv<br>
+  This project predicts in which category Iris flower falls<br>
+          It Follows  industrial best practices  by<br>
+		  
+          	•	Automating preprocessing with Pipeline<br>
+			
+          	•	Scaling the dataset values using StandardScalar<br>
+			
+          	•	Used Decision Tree and KNN<br>
+			
+          	•	Saving and losing trained model using job lib<br>
+			
+          	•	Provided data visualisation<br>
+			
             
  ##  Dependencies:
 Install the required Python packages before running the project
