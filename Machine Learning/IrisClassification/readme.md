@@ -45,9 +45,8 @@ __Pipeline Construction__:
 		•	Step 1 : Standard scalar to scale all the features
 		•	Step 2 : KNN and Decision Tree for result prediction
 
-__Model Training and Evaluation__:
+__Model Training and Evaluation__:<br>
 		•	Metrics: Accuracy,Confusion Matrix and Classification Report
-		
 		
 
 __Model Saving and Loading__:
