@@ -135,6 +135,8 @@ def preProcessData():
 
     #Clean data set
     df=cleanDataSet(df)
+    # Scatter Plot of classification
+    plotIrisVariety(df)
     #Encode Data set
     df=EncodeDataSet(df)
     #Print co-relation matrix
@@ -279,6 +281,27 @@ def train_and_evaluate():
     plotConfusionMatrix(algorithmDetails)
     #Save classification Report
     save_classification_report(algorithmDetails)
+    
+###########################################################################################
+#   Function        :   plotIrisVariety
+#   Input Params    :   df(Data Frame)
+#   Output Params   :   Saves scatter plot of Iris Variety
+#   Description     :   prints and saves scatter plot
+#   Author          :   Vaishali M Jorwekar
+#   Date            :   30 Oct 2025
+##########################################################################################
+def plotIrisVariety(df):
+    ensure_dir(ARTIFACT_DIR)
+    outDir=os.path.join(ARTIFACT_DIR,"featureWisePlot.png")
+
+    fig, axes = plt.subplots(nrows=2,ncols=1,figsize=(10,10))
+    sns.scatterplot(x='sepal.length', y='sepal.width',
+                hue='variety', data=df,ax=axes[0],palette="deep")
+    sns.scatterplot(x='petal.length', y='petal.width',
+                hue='variety', data=df,ax=axes[1],palette="deep")
+    plt.savefig(outDir)
+    plt.close()
+
 ###########################################################################################
 #   Function        :   save_classification_report
 #   Input Params    :   algorithmDetails(Dictionary holding all details)
