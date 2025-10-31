@@ -1,0 +1,33 @@
+
+
+Test Data :
+-----------------------------------------------------------------
+     sepal.length  sepal.width  petal.length  petal.width  variety
+18            5.7          3.8           1.7          0.3        0
+81            5.5          2.4           3.7          1.0        1
+51            6.4          3.2           4.5          1.5        1
+89            5.5          2.5           4.0          1.3        1
+6             4.6          3.4           1.4          0.3        0
+68            6.2          2.2           4.5          1.5        1
+8             4.4          2.9           1.4          0.2        0
+122           7.7          2.8           6.7          2.0        2
+10            5.4          3.7           1.5          0.2        0
+105           7.6          3.0           6.6          2.1        2
+-----------------------------------------------------------------
+Decision Tree Classifier
+                        Testing Accuracy:100.0
+-----------------------------------------------------------------
+KNN
+                        Testing Accuracy:100.0
+-----------------------------------------------------------------
+        variety Decision Tree Classifier         KNN
+18       setosa                   setosa      setosa
+81   versicolor               versicolor  versicolor
+51   versicolor               versicolor  versicolor
+89   versicolor               versicolor  versicolor
+6        setosa                   setosa      setosa
+68   versicolor               versicolor  versicolor
+8        setosa                   setosa      setosa
+122   virginica                virginica   virginica
+10       setosa                   setosa      setosa
+105   virginica                virginica   virginica
