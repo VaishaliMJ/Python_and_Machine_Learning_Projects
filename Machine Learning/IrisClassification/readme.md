@@ -66,7 +66,7 @@ __Model Saving and Loading__:
     •  Testing the model:
       		python3 IrisClassification.py --test 
     
-  • __Expected Outputs saved in__:
+  • __Expected Outputs saved in__:<br>
   
       Expected testing data output   :   PredictedResults.txt
 	  
