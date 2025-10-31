@@ -1,17 +1,17 @@
 # Overview:
   Implemented classic ML classification on the Iris dataset using Decision Tree and KNN,using dataset Iris.csv<br>
   This project predicts in which category Iris flower falls<br>
-          It Follows  industrial best practices  by<br>
+          It Follows  industrial best practices by
 		  
-          	•	Automating preprocessing with Pipeline<br>
+          	•	Automating preprocessing with Pipeline
 			
-          	•	Scaling the dataset values using StandardScalar<br>
+          	•	Scaling the dataset values using StandardScalar
 			
-          	•	Used Decision Tree and KNN <br>
+          	•	Used Decision Tree and KNN
 			
-          	•	Saving and losing trained model using job lib <br>
+          	•	Saving and losing trained model using job lib
 			
-          	•	Provided data visualisation <br>
+          	•	Provided data visualisation
 			
             
  ##  Dependencies:
@@ -45,41 +45,46 @@ __Pipeline Construction__:<br>
 		
 		•	Step 2 : KNN and Decision Tree for result prediction<br>
 
-__Model Training and Evaluation__:<br>
-		•	Metrics: Accuracy,Confusion Matrix and Classification Report<br>
+__Model Training and Evaluation__:
+
+		•	Metrics: Accuracy,Confusion Matrix and Classification Report
+		
 		
 
-__Model Saving and Loading__:<br>
-		•	Save the all models with joblib<br>
+__Model Saving and Loading__:
+
+		•	Save the all models with joblib
 		
-		•	Load models for future predictions without retraining<br>
+		•	Load models for future predictions without retraining
 		
-### Running the Project:<br>
-	• Load data set(only once) <br>
+### Running the Project:
+
+	• Load data set(only once) 
 	
-			pandas.read_csv(file_path)<br>
+			pandas.read_csv(file_path)
 			
-	• Train and evaluate model:<br>
+	• Train and evaluate model:
 	
-			python3 IrisClassification.py --train <br>
+			python3 IrisClassification.py --train
 			
-    •  Testing the model__:<br>
+    •  Testing the model:
 	
-      		python3 IrisClassification.py --test <br>
+      		python3 IrisClassification.py --test 
     
-  • __Expected Outputs saved in__:<br>
-      Expected testing data output   :   PredictedResults.txt<br>
+  • __Expected Outputs saved in__:
+      Expected testing data output   :   PredictedResults.txt
+	  
   •	__Visualisations__:<br>
   
-  	Confusion Matrix                   :   ConfusionMatrix.png<br>
+  	Confusion Matrix                   :   ConfusionMatrix.png
 	
-  	Classification Report              :   classification_report.txt<br>
+  	Classification Report              :   classification_report.txt
 	
-  	feature Wise Plot                  :   featureWisePlot.png<br>
+  	feature Wise Plot                  :   featureWisePlot.png
   
-__Model Storage: Model saved as follows__<br>
+__Model Storage: Model saved as follows__
 
-	-Trained pipeline for Decision Tree Classifier<br>
+	-Trained pipeline for Decision Tree Classifier
 	
        Model saved to path :artifact_Iris/Decision Tree Classifier.joblib<br>
 	   
