@@ -67,9 +67,10 @@ __Model Saving and Loading__:
       		python3 IrisClassification.py --test 
     
   • __Expected Outputs saved in__:
+  
       Expected testing data output   :   PredictedResults.txt
 	  
-  •	__Visualisations__:<br>
+  •	__Visualisations__:
   
   		Confusion Matrix                   :   ConfusionMatrix.png
 	
