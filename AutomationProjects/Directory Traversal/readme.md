@@ -9,7 +9,9 @@
  ## Dependencies 
     Install the required Python packages before running the project
    
-     pip install time os sys schedule hashlib smtplib dotenv email argparse logging email_validator
+      pip install time os sys schedule hashlib smtplib dotenv email argparse logging email_validator
+
+    Update the values in .env file
  
  ### Running Script
  #### Command line Arguments
