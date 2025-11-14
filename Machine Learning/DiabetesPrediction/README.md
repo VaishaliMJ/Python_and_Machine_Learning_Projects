@@ -44,23 +44,24 @@ Install the required Python packages before running the project
 		•	Step 2 : Used Logistic Regression,KNN,Decision Tree for result prediction
 
 ####  Model Training and Evaluation:
-		•	Metrics: Accuracy,Confusion Matrix and Classification Report are stored in folder artifact_diabetes
-		•	Feature Importance Plot: Shows most influential features is stored in folder artifact_diabetes
+		•	Metrics: Accuracy,Confusion Matrix and Classification Report 
+		•	Feature Importance Plot: Shows most influential features 
 
 ####  Model Saving and Loading:
-		•	Save the all three models with joblib in folder artifact_diabetes
-		•	Load models for future predictions without retraining from folder artifact_diabetes
+		•	Save the all three models with joblib 
+		•	Load models for future predictions without retraining 
 
 ####  Running the Project:
 	•	Load data set (only once)
 			pandas.read_csv(file_path)
 	•	Train and evaluate model
 			python3 DiabetesPrediction.py --train
-  •	Test pretarined model
-			python3 DiabetesPrediction.py --test    
-###  Expected Outputs saved in (artifact_diabetes):
+  	•	Test pretarined model
+			python3 DiabetesPrediction.py --test  
+			
+###  Expected Outputs saved:
   ####  Expected testing data output :   *PredictedResults.txt*
-###  Visualisations(artifact_diabetes folder)
+###  Visualisations
   Confusion Matrix                   :   *ConfusionMatrix.png*
   
   Classification Report              :   *classification_report.txt*
