@@ -7,7 +7,7 @@
           	•	Automating preprocessing with Pipeline
           	•	Scaling the dataset values using StandardScalar
           	•	Used Logistic Regression,KNN and Decision Tree Classifier algorithms
-          	•	Saving and losing trained model using job lib
+          	•	Saving and loding trained model using job lib
           	•	Provided data visualisation 
 
 ##  Dependencies:
