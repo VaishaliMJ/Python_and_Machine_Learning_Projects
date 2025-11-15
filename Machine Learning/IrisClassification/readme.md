@@ -9,7 +9,7 @@
 			
           	•	Used Decision Tree and KNN
 			
-          	•	Saving and losing trained model using job lib
+          	•	Saving and loding trained model using job lib
 			
           	•	Provided data visualisation
 			
