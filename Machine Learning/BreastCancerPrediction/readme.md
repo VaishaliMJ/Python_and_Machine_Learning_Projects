@@ -5,7 +5,7 @@ Achieved high accuracy using Logistic Regression & Support Vector Machine(SVM)<b
       	•	Automating preprocessing with Pipeline<br>
       	•	Scaling the dataset values using StandardScalar<br>
       	•	Used Logistic Regression & Support Vector Machine(SVM) algorithms<br>
-      	•	Saving and losing trained model using job lib<br>
+      	•	Saving and loding trained model using job lib<br>
       	•	Provided data visualisation <br>
 ## Dependencies<br>
 Install the required Python packages before running the project<br>
