@@ -32,7 +32,7 @@ Gender,Age Range,Head Size(cm^3),Brain Weight(grams)<br>
 
 #### Pipeline Construction:<br>
   •	Step 1 : Standard scalar to scale all the features<br>
-	•	Step 2 : Used Linear Regressionfor result prediction
+	•	Step 2 : Used Linear Regression for result prediction
   
 #### Model Training and Evaluation:<br>
   •	Metrics: Accuracy,Confusion Matrix and Classification Report<br>
