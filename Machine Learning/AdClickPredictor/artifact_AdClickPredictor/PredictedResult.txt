@@ -1,0 +1,27 @@
+
+
+
+Test Data :
+-----------------------------------------------------------------
+     Daily Time Spent on Site       Age  Area Income  Daily Internet Usage  Male  Clicked on Ad  Month   Day  Weekday  Hour
+555                  0.483079  0.112855     1.385788              1.010555   0.0            0.0    7.0  21.0      3.0  10.0
+925                 -1.840005  1.023896    -0.879601             -0.666732   0.0            1.0    6.0  27.0      0.0  21.0
+805                  1.205110 -0.912065     0.390220              0.023308   1.0            0.0    5.0  28.0      5.0  12.0
+513                 -0.368612  0.910016    -0.408772             -1.692964   1.0            1.0    6.0   9.0      3.0  17.0
+652                  1.292186 -0.456545     0.033237              1.013765   1.0            0.0    2.0  24.0      2.0   6.0
+-----------------------------------------------------------------
+Logistic Regression
+Testing Accuracy:100.0
+-----------------------------------------------------------------
+Decision Tree Classifier
+Testing Accuracy:100.0
+-----------------------------------------------------------------
+KNN
+Testing Accuracy:100.0
+-----------------------------------------------------------------
+         Clicked on Ad Logistic Regression Decision Tree Classifier                KNN
+555  user didn't click   user didn't click        user didn't click  user didn't click
+925       user clicked        user clicked             user clicked       user clicked
+805  user didn't click   user didn't click        user didn't click  user didn't click
+513       user clicked        user clicked             user clicked       user clicked
+652  user didn't click   user didn't click        user didn't click  user didn't click
