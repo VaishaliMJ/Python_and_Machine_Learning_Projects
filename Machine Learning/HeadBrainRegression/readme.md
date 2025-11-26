@@ -35,8 +35,8 @@ Gender,Age Range,Head Size(cm^3),Brain Weight(grams)<br>
 	•	Step 2 : Used Linear Regression for result prediction
   
 #### Model Training and Evaluation:<br>
-  •	Metrics: Accuracy,Confusion Matrix and Classification Report<br>
-	•	Feature Importance Plot: Shows most influential features 
+  •	Metrics: Mean squared error,Root mean squared error,R^2 <br>
+  •	Co-Relation Matrix
 
 #### Model Saving and Loading:<br>
   •	Save the model with joblib <br>
