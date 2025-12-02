@@ -72,6 +72,15 @@ This folder contains the different case studies for machine learning algorithms
           </td>
           <td>Breast Cancer Prediction</td>
         </tr>
+        <tr>
+          <td>
+            <a href = "https://github.com/VaishaliMJ/Python/tree/main/Machine%20Learning/Customer%20Segmentation(Unsupervised)">
+              Customer Segmentation(Unsupervised -K Means clustering)
+            </a>
+          </td>
+          <td>Grouped retail customers into distinct clusters based on purchasing behaviour for targeted marketing
+</td>
+        </tr>    
       </tbody>
     </table> 
 
