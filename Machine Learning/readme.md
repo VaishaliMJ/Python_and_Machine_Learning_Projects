@@ -26,6 +26,14 @@ This folder contains the different case studies for machine learning algorithms
         </tr>    
         <tr>
           <td>
+            <a href = "https://github.com/VaishaliMJ/Python/tree/main/Machine%20Learning/AdvertisingSalesAnalysis">
+              Advertising Sales Analysis
+            </a>
+          </td>
+          <td>Ad Click Predictor</td>
+        </tr>        
+        <tr>
+          <td>
             <a href = "https://github.com/VaishaliMJ/Python/tree/main/Machine%20Learning/IrisClassification">
               Iris Classification
             </a>
