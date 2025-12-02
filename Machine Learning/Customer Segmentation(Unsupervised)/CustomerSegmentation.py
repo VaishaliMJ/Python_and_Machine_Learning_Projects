@@ -318,9 +318,9 @@ def trainModel(df,X,nClusters):
     df["Cluster"]=y_KMeans
 
     plt.figure(figsize=(10,8))
-    plt.scatter(X[y_KMeans==0,0],X[y_KMeans==0,1],s=80,c="red",label="Cluster 0: Low Income,High Spending")
+    plt.scatter(X[y_KMeans==0,0],X[y_KMeans==0,1],s=80,c="red",label="Cluster 0: Low Income,Low Spending")
     plt.scatter(X[y_KMeans==1,0],X[y_KMeans==1,1],s=80,c="cyan",label="Cluster 1: High Income,Average Spending")
-    plt.scatter(X[y_KMeans==2,0],X[y_KMeans==2,1],s=80,c="blue",label="Cluster 2:Low Income,High Spending")
+    plt.scatter(X[y_KMeans==2,0],X[y_KMeans==2,1],s=80,c="blue",label="Cluster 2:Low Income,Average Spending")
     plt.scatter(X[y_KMeans==3,0],X[y_KMeans==3,1],s=80,c="yellow",label="Cluster 3:Average Income,Average Spending")
     plt.scatter(X[y_KMeans==4,0],X[y_KMeans==4,1],s=80,c="darkblue",label="Cluster 4:High Income,High Spending")
     plt.scatter(X[y_KMeans==5,0],X[y_KMeans==5,1],s=80,c="pink",label="Cluser 5:Average Income,Low Spending")
