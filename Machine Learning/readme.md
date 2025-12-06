@@ -89,6 +89,14 @@ This folder contains the different case studies for machine learning algorithms
           <td>Grouped retail customers into distinct clusters based on purchasing behaviour for targeted marketing
 </td>
         </tr>    
+        <tr>
+          <td>
+            <a href = "https://github.com/VaishaliMJ/Python/tree/main/Machine%20Learning/MovieRecommendation(Unsupervised)">
+              Movie Recommendation System(Unsupervised -K Means clustering)
+            </a>
+          </td>
+          <td>Built a recommendation engine using clustering & similarity measures</td>
+        </tr>        
       </tbody>
     </table> 
 
