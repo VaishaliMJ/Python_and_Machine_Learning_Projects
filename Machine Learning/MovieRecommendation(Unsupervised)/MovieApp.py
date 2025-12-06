@@ -11,14 +11,18 @@ import streamlit as st
 import os,joblib
 import pandas as pd
 import numpy as np
+from dotenv import load_dotenv 
+
 
 ARTIFACT_DIR="artifact_MovieRecommondation"
 MODEL_NAME="MovieRecommonder"
 # --- Load Pre-calculated Data ---
 DATA_FRAME_DICT="movies_dict"
 COSINE_SIM = "cosine_sim_matrix"
-API_KEY="93dbb41e595c1c945c2a61d97f692d61"
-BASE_IMAGE_URL = 'https://image.tmdb.org/t/p/w500/' # w500 is a common size
+load_dotenv()  
+    
+API_KEY=os.getenv("API_KEY")
+BASE_IMAGE_URL = 'https://image.tmdb.org/t/p/w500/'
 
 
 
@@ -72,6 +76,8 @@ def loadModel(modelName):
 #   Date            :   4 Dec 2025
 #########################################################################################################
 def main():
+    # loading variables from .env file
+    
     st.title("Movie Recommendation")
 
     movies_dict=loadModel(DATA_FRAME_DICT)
