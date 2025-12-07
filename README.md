@@ -1,4 +1,4 @@
-This is repository contains  codes of following ...all codes related to basic python programming,Machine learning case studies
+This is repository contains  codes of following.
 <table>
       <thead>
         <tr>
