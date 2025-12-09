@@ -53,7 +53,7 @@ AcceptedCmp1,AcceptedCmp2,Complain,Z_CostContact,Z_Revenue,Response<br>
  #### Expected Outputs saved:
  **Visualisations**<br>
 
-  Co-Relation.png.png<br>
+  Co-Relation.png<br>
 
   ClusterVsInertiaPlot.png<br>
 
