@@ -20,7 +20,7 @@ MODEL_NAME="MovieRecommonder"
 DATA_FRAME_DICT="movies_dict"
 COSINE_SIM = "cosine_sim_matrix"
 #load_dotenv()  
-config=json.load(open(os.path.join(ARTIFACT_DIR,"config.json")))
+config=json.load(open("config.json"))
     
 API_KEY=config["API_KEY"]
 BASE_IMAGE_URL = 'https://image.tmdb.org/t/p/w500/'
@@ -97,8 +97,7 @@ def main():
     if st.button(" 🚀 Recommend Similar Movies with overview"):
         recommended_movies,posters,recommended_movie_ids=recommend(movies_df,selectedMovieName)
         #print(recommended_movies)
-        print("###################################")
-        print(recommended_movie_ids)
+        
         #movieLen = len(recommended_movie_ids)
         #for i, col in enumerate(cols):
         #    with col:
@@ -112,14 +111,14 @@ def main():
                 with col1: 
                    st.image(posters[i],caption=recommended_movies[i],width=100) 
                 with col2:
-                    print(recommended_movie_ids[i])
+                    
                     movieId = originalDF[originalDF['movie_id'] == recommended_movie_ids[i]].index[0]
                     #movie_Overview = originalDF.iloc[recommended_movie_ids[i]]['overview'].index[0]
 
                     movie_Overview = originalDF.iloc[movieId]['overview']
 
                     #movie_Overview = originalDF.iloc[i]['overview']
-                    print(movie_Overview)
+                    
                     st.write(f"Overview:")
                     st.write(movie_Overview)
                     st.divider()
