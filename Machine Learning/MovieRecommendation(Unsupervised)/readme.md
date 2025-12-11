@@ -15,7 +15,8 @@ This is content based recommendation system.
 
 ## Dependencies:<br>
 Install the required Python packages before running the project<br>
-_pip install pandas numpy matplotlib scikit-learn joblib streamlit_
+_pip install pandas numpy matplotlib scikit-learn joblib streamlit_<br>
+_update config.json_ for API Key
 
 ### DataSet information:<br>
 Used "tmdb_5000_movies.csv" and "tmdb_5000_credits.csv" movies dataset for building system
@@ -24,11 +25,10 @@ Used "tmdb_5000_movies.csv" and "tmdb_5000_credits.csv" movies dataset for build
 
 #### Data Preparation: <br>
 •  Convert tmdb_5000_movies.csv and tmdb_5000_credits.csv file into data frame<br>
-•  Combine 
-•  Select important fetaures only from both the datasets
-•	 Clean data set,by removing spaces,Stem to reduce word count
-•	 
-•	 
+•  Combine both datasets<br>
+•  Select important fetaures only from both the datasets<br>
+•	 Clean data set,by removing spaces,Stem to reduce word count<br>
+	 
 ####  Pre-Processing :<br>
   •	Step 1 : Used TfidfVectorizer for convertion of text data<br>
 	•	Step 2 : Used K-Means for result prediction
@@ -62,5 +62,5 @@ Used "tmdb_5000_movies.csv" and "tmdb_5000_credits.csv" movies dataset for build
  Vaishali M. Jorwekar<br>
  Date	:28 Nov 2025 
   
-• Select important features for model training
+
 
