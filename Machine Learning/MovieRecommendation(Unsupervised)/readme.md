@@ -55,7 +55,7 @@ Used "tmdb_5000_movies.csv" and "tmdb_5000_credits.csv" movies dataset for build
   Co-Relation.png<br>
 
   ClusterVsInertiaPlot.png<br>
-  
+  <img src="images/screenshot.png" alt="Project Screenshot" width="500"/>
 
 **Author**
 
