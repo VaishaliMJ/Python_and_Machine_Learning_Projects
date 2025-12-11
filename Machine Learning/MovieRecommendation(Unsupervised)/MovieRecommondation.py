@@ -28,6 +28,7 @@ MOVIES_DATA="tmdb_5000_movies.csv"
 CREDITS_DATA="tmdb_5000_credits.csv"
 ARTIFACT_DIR="artifact_MovieRecommondation"
 MODEL_NAME="MovieRecommonder"
+EXTRACTED_DATA_FRAME="ExtractedDataFrame"
 RANDOM_STATE=42
 ###########################################################################################
 #   Function        :   ensure_dir
@@ -98,10 +99,17 @@ def formatDataSet(dfMovie):
     #   Format 'genres' column 
     dfMovie['genres']=dfMovie['genres'].apply(formatDataCols)  
     dfMovie['keywords']=dfMovie['keywords'].apply(formatDataCols) 
-    dfMovie['cast']=dfMovie['cast'].apply(formatCast)
+    
     dfMovie['crew']=dfMovie['crew'].apply(fetchDirector)
-    dfMovie['overview']=dfMovie['overview'].apply(lambda x:x.split())
+    dfMovie['cast']=dfMovie['cast'].apply(formatCast)
 
+    #outDir=os.path.join(ARTIFACT_DIR,EXTRACTED_DATA_FRAME)
+    # Save the DataFrame to a CSV file
+    #dfMovie.to_dict(outDir, index=False)
+    movies_dict=dfMovie.to_dict()
+    saveModel(movies_dict,EXTRACTED_DATA_FRAME)
+    dfMovie['overview']=dfMovie['overview'].apply(lambda x:x.split())
+    
     
     #   Remove extra spaces
     dfMovie['genres']=dfMovie['genres'].apply(lambda x : [i.replace (" ","") for i in x])  
@@ -174,6 +182,7 @@ def formatDataCols(obj):
 ###########################################################################################
 def cleanDataSet(dfMovie):  
     dfMovie=dfMovie[["movie_id","genres","keywords","title","overview","cast","crew"]]
+   
     print(f"Data Frame Info:{dfMovie.head()}")
     #   Null value coulmn drop
     print(f"Null value coulmns:\n{BORDER}\n{dfMovie.isnull().sum()}\n{BORDER}")
