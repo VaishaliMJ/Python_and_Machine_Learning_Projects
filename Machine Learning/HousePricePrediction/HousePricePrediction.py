@@ -160,14 +160,59 @@ def cleanDataSet(dFrame)->pd.DataFrame:
 
     print("Duplicated values...")
     print(dFrame.duplicated().sum())
-
+    dFrame.drop_duplicates(inplace=True)
     # Replace Target column empty values with column mean() values
     dFrame[TARGET_COLNAME]=dFrame[TARGET_COLNAME].fillna(dFrame[TARGET_COLNAME].mean())
     dFrame.dropna(inplace=True)
     print("Checking for null values...")
     print(dFrame.isnull().sum())
-    return dFrame
 
+    #   Remove Outliers
+    dFrame=removeOutliers(dFrame)
+    #   Data Analysis
+    dataAnalysis(dFrame)
+    return dFrame
+###########################################################################################
+#   Function        :   dataAnalysis
+#   Input Params    :   dFrame(data frame)
+#   Output Params   :   None
+#   Description     :   This method analyse data
+#   Author          :   Vaishali M Jorwekar
+#   Date            :   5 Nov 2025
+############################################################################################
+def dataAnalysis(dFrame):
+    print(BORDER)
+    print(f"Price variation as per features...")
+    print(BORDER)
+    dFrame.groupby('condition of the house')['Price'].mean().\
+        sort_values(ascending=False).head(10).plot(kind="bar")
+    plt.title("Condition of the house VS Price")
+    plt.ylabel("Mean Price")
+    plt.xlabel("Condition of House")
+    plt.savefig(os.path.join(ARTIFACT_DIR,"ConditionVsPrice.png"))
+    
+###########################################################################################
+#   Function        :   removeOutliers
+#   Input Params    :   dFrame(data frame)
+#   Output Params   :   dFrame after removing outliers
+#   Description     :   This method removes outliers
+#   Author          :   Vaishali M Jorwekar
+#   Date            :   5 Nov 2025
+############################################################################################
+def removeOutliers(dFrame):
+    xFeatures=findFeatures(dFrame)
+    print(f"Before Removal of Outliers,Dataset Size :{dFrame.shape}")
+    for cnt in xFeatures:
+        Q1=dFrame[cnt].quantile(0.25)
+        Q3=dFrame[cnt].quantile(0.75)
+        IQR=Q3-Q1
+        dFrame=dFrame[dFrame[cnt] <= (Q3+(1.5*IQR))]
+        dFrame=dFrame[dFrame[cnt] >= (Q1-(1.5*IQR))]
+        dFrame=dFrame.reset_index(drop=True)
+    
+    print(f"After Removal of Outliers,Dataset Size :{dFrame.shape}")
+   
+    return dFrame
 
 ###########################################################################################
 #   Function        :   findFeatures
@@ -179,8 +224,7 @@ def cleanDataSet(dFrame)->pd.DataFrame:
 ############################################################################################
 def findFeatures(dFrame):
     xFeatures=dFrame[['number of bedrooms', 'number of bathrooms','living area', 
-                      'grade of the house','Area of the house(excluding basement)',
-                      'living_area_renov']]
+                      'condition of the house','Number of schools nearby']]
     return xFeatures
 ###########################################################################################
 #   Function        :   findFeaturesAndTarget
@@ -226,7 +270,6 @@ def build_Pipeline(clf_Model):
     pipe=Pipeline(steps=[
         ("scalar",StandardScaler()),
         ("clf",clf_Model)
-
     ]) 
     return pipe
 #####################################################################################################
