@@ -97,8 +97,17 @@ This folder contains the different case studies for machine learning algorithms
           </td>
           <td>Built a recommendation engine using clustering & similarity measures</td>
         </tr>        
-      </tbody>
-    </table> 
+        </tr>    
+        <tr>
+          <td>
+            <a href = "https://github.com/VaishaliMJ/Python_and_Machine_Learning/tree/main/Machine%20Learning/HousePricePrediction">
+              House Price Prediction
+            </a>
+          </td>
+          <td>Built a House Prediction Model</td>
+        </tr>            
+            
+      
 
 
 
