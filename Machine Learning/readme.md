@@ -30,7 +30,7 @@ This folder contains the different case studies for machine learning algorithms
               Advertising Sales Analysis
             </a>
           </td>
-          <td>Ad Click Predictor</td>
+          <td>Advertising Sales Analysis</td>
         </tr>        
         <tr>
           <td>
