@@ -104,7 +104,7 @@ This folder contains the different case studies for machine learning algorithms
               House Price Prediction
             </a>
           </td>
-          <td>Built a House Prediction Model</td>
+          <td>Built a House Price Prediction Model</td>
         </tr>            
             
       
