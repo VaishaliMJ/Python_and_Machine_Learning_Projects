@@ -106,7 +106,14 @@ This folder contains the different case studies for machine learning algorithms
           </td>
           <td>Built a House Price Prediction Model</td>
         </tr>            
-            
+         <tr>
+          <td>
+            <a href = "https://github.com/VaishaliMJ/Python_and_Machine_Learning/tree/main/Machine%20Learning/LoanDefaultPrediction">
+              Loan Default Prediction
+            </a>
+          </td>
+          <td>Loan Default prediction Model</td>
+        </tr>        
       
 
 
