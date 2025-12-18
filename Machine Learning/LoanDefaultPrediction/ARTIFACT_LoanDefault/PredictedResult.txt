@@ -1,0 +1,39 @@
+
+
+
+Test Data :
+-----------------------------------------------------------------
+        Age  Income  LoanAmount  ...  LoanPurpose  HasCoSigner  Default
+161850   25   40063       44626  ...            3            0        1
+12927    46   76852       57800  ...            1            0        0
+252696   69  117305       34039  ...            1            0        0
+217283   56  129741      173494  ...            2            0        0
+135483   44  119334      102271  ...            1            0        0
+66962    49   43066       75528  ...            0            1        0
+35955    67   45038      172775  ...            4            0        0
+129676   56   67027       15334  ...            4            0        0
+218896   46  131710      239074  ...            1            1        0
+64337    35  140151      187743  ...            4            1        0
+
+[10 rows x 17 columns]
+-----------------------------------------------------------------
+Random Forest Classifier
+Testing Accuracy:100.0
+-----------------------------------------------------------------
+Gradient Boosting Classifier
+Testing Accuracy:90.0
+-----------------------------------------------------------------
+Voting Classifier
+Testing Accuracy:90.0
+-----------------------------------------------------------------
+              Default Random Forest Classifier Gradient Boosting Classifier Voting Classifier
+161850      Defaulter                Defaulter                Non-Deafulter     Non-Deafulter
+12927   Non-Deafulter            Non-Deafulter                Non-Deafulter     Non-Deafulter
+252696  Non-Deafulter            Non-Deafulter                Non-Deafulter     Non-Deafulter
+217283  Non-Deafulter            Non-Deafulter                Non-Deafulter     Non-Deafulter
+135483  Non-Deafulter            Non-Deafulter                Non-Deafulter     Non-Deafulter
+66962   Non-Deafulter            Non-Deafulter                Non-Deafulter     Non-Deafulter
+35955   Non-Deafulter            Non-Deafulter                Non-Deafulter     Non-Deafulter
+129676  Non-Deafulter            Non-Deafulter                Non-Deafulter     Non-Deafulter
+218896  Non-Deafulter            Non-Deafulter                Non-Deafulter     Non-Deafulter
+64337   Non-Deafulter            Non-Deafulter                Non-Deafulter     Non-Deafulter
