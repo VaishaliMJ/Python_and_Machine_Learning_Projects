@@ -50,8 +50,11 @@ Mean, Error, and Worst values for: Radius, Texture, Perimeter, Area, Smoothness,
 *	**FeatureImportance.png**: Plot showing the most influential features.
 *	**classification_report.txt**: Detailed precision, recall, and F1-score breakdown.
 *	**PredictedResults.txt**: Output from the testing phase.<br>
-
-### Author:<br>
+#### Saved Models
+**Trained models are stored as:**
+*	Logistic Regression.joblib
+*	SVM.joblib
+### ✍️Author:<br>
 Vaishali M. Jorwekar<br>
 Date	:31 Oct 2025<br>  
   
