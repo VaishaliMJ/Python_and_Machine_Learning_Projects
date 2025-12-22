@@ -94,7 +94,7 @@ The following artifacts are automatically generated in the artifact_AdClickPredi
 *	**Feature Importance**: Plot showing which factors (e.g., Age, Income) most influence a click.
 *	**Classification Report**: Detailed Precision, Recall, and F1-Score metrics.
 
-###  Author:<br>
+###  ✍️Author:<br>
   Vaishali M. Jorwekar<br>
 	Date	:12 Oct 2025 <br> 
   
