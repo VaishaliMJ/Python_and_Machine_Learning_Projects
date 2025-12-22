@@ -73,8 +73,8 @@ Clicked on Ad: 0 (No) or 1 (Yes)
 ###  Data Preparation:<br>
 1.	**Data Prep:** Data Prep :Load CSV, clean missing values, and convert categorical strings to numeric formats.
 2.	**Split**: 80% Train / 20% Test split.
-3.	**Pipeline**:
-   		* **Scale**: StandardScaler()
+3.	**Pipeline**:<br>
+   		* **Scale**: StandardScaler()<br>
    		* **Classify**: Fit LogisticRegression, KNeighborsClassifier, and DecisionTreeClassifier.
 4.	**Evaluation**: Generate Confusion Matrix, Accuracy, and Classification Reports.
 5.	**Save**: Export .joblib files for future inference.
