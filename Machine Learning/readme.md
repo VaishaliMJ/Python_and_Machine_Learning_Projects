@@ -117,10 +117,10 @@ This folder contains the different case studies for machine learning algorithms
         <tr>
           <td>
             <a href = "https://github.com/VaishaliMJ/Python_and_Machine_Learning/tree/main/Machine%20Learning/SentimentAnalysis">
-              Sentiment Analysis Enhancement
+              Sentiment Analysis
             </a>
           </td>
-          <td>Sentiment Analysis Enhancement (Ensemble Bagging & Boosting)</td>
+          <td>Sentiment Analysis(Ensemble Bagging & Boosting)</td>
         </tr>        
       
 
