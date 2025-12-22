@@ -1,73 +1,101 @@
-# Overview 
-Built Regression model to predict advertisement sales
 
+# Advertisement Sales Prediction
 
-It Follows industrial best practices by
+Built a Regression model to predict advertisement sales based on multi-channel advertising spends.
 
-•	Automating preprocessing with Pipeline
-		
-•	Scaling the dataset values using StandardScalar
-		
-•	Used Linear Regression algorithm
-		
-•	Saving and loding trained model using job lib
-		
-•	Provided data visualisation
+## 🚀 Key Features
+This project follows industrial best practices for machine learning:
+- **Automated Preprocessing**: Uses `sklearn.pipeline.Pipeline` to bundle scaling and modeling.
+- **Feature Scaling**: Implements `StandardScalar` to normalize dataset values.
+- **Algorithm**: Utilizes **Linear Regression** for predictive analysis.
+- **Model Persistence**: Saves and loads trained models using `joblib`.
+- **Data Visualization**: Provides insights via correlation matrices and regression plots.
 
-## Dependencies:<br>
-Install the required Python packages before running the project<br>
-_pip install pandas numpy matplotlib scikit-learn joblib_
-### DataSet information:<br>
-#### Features and Target:<br>
-TV,radio,newspaper,sales
-### Workflow:
+## 🛠 Dependencies
+Install the required Python packages before running the project:
 
-#### Data Preparation: <br>
-• Convert Advertising.csv file into data frame<br>
-•	Clean data set
+		pip install pandas numpy matplotlib scikit-learn joblib<br>
+---
 
-#### Pipeline Construction:<br>
-  •	Step 1 : Standard scalar to scale all the features<br>
-	•	Step 2 : Used Linear Regression for result prediction
+## 📊 Dataset Information<br>
+	The model analyzes the relationship between advertising budgets and sales.
+- **Features** : TV, radio, newspaper
+- **Target**: sales
+---
+### ⚙️  Workflow
+1. **Data Preparation**
+	- Converts Advertising.csv into a Pandas DataFrame.
+	- Cleans and prepares the dataset for processing.
+
+2.	**Pipeline Construction**
+  	-	Step 1 (Scaling): StandardScalar to normalize all features.
+	-	Step 2 (Modeling): LinearRegression for prediction.
+
   
-#### Model Training and Evaluation:<br>
-  •	Metrics: Mean squared error,Root mean squared error,R^2 <br>
-  •	Co-Relation Matrix
+3.	**Model Training and Evaluation**
+  -	**Metrics**: Mean Squared Error (MSE), Root Mean Squared Error (RMSE), and \(R^{2}\) Score.
+  -	**Visuals**: Generates a Correlation Matrix to identify feature importance.
   
-#### Model Saving and Loading:<br>
-  •	Save the model with joblib <br>
-	•	Load models for future predictions without retraining<br>
+4. **Model Saving and Loading**:<br>
+-	Saves the trained model as Linear Regression.joblib.
+- Allows for future predictions without the need for retraining.<br>
+---
 
-#### Running the Project:<br>
-  •	Load data set (only once)<br>
-		    pandas.read_csv(file_path)<br>
-  •	Train and evaluate model<br>
-	    	python3 AdvertisingSalesAnalysis.py --train<br>
-        
-  •	Test pre-trained model<br>
-		    python3 AdvertisingSalesAnalysis.py --test<br> 
+### 🚀 Running the Project
+**Train and Evaluate**<br>
 
- #### Expected Outputs saved:
+	python3 AdvertisingSalesAnalysis.py --train<br>
+	
+**Test pre-trained model**<br>
 
-**Expected testing data output** : <br>
-  PredictedSales.txt<br>
-  MeanSquaredError.txt<br>
-  
+	python3 AdvertisingSalesAnalysis.py --test<br> 
 
-**Visualisations**<br>
 
-  Co Realtion Matrix : CoRelationMatrix.png
+### 📁 Project Outputs & Artifacts
 
-  Regression Plot SalesPredictionPlot.png
 
-**Model Storage**: Model saved as follows
+<table>
+  <thead>
+    <tr>
+      <th>Category</th>
+      <th>File Name</th>
+      <th>Description</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>Data</td>
+      <td><code>PredictedSales.txt</code></td>
+      <td>List of predicted sales values</td>
+    </tr>
+    <tr>
+      <td>Metrics</td>
+      <td><code>MeanSquaredError.txt</code></td>
+      <td>Final error calculations</td>
+    </tr>
+    <tr>
+      <td>Visuals</td>
+      <td><code>CoRelationMatrix.png</code></td>
+      <td>Heatmap of feature correlations</td>
+    </tr>
+    <tr>
+      <td>Visuals</td>
+      <td><code>SalesPredictionPlot.png</code></td>
+      <td>Plot comparing Actual vs Predicted values</td>
+    </tr>
+    <tr>
+      <td>Model</td>
+      <td><code>Linear Regression.joblib</code></td>
+      <td>The serialized trained model</td>
+    </tr>
+  </tbody>
+</table>
 
-  -Linear Regression.joblib<br>
     
  **Author**
 
- Vaishali M. Jorwekar<br>
- Date	:25 Nov 2025 
+ **Vaishali M. Jorwekar**<br>
+ **Date	:25 Nov 2025**
   
          
 
