@@ -112,7 +112,15 @@ This folder contains the different case studies for machine learning algorithms
               Loan Default Prediction
             </a>
           </td>
-          <td>Loan Default prediction Model</td>
+          <td>Loan Default prediction Model((Ensemble-Random Forest & Gradient Boosting)</td>
+        </tr>        
+        <tr>
+          <td>
+            <a href = "https://github.com/VaishaliMJ/Python_and_Machine_Learning/tree/main/Machine%20Learning/SentimentAnalysis">
+              Sentiment Analysis Enhancement
+            </a>
+          </td>
+          <td>Sentiment Analysis Enhancement (Ensemble Bagging & Boosting)</td>
         </tr>        
       
 
