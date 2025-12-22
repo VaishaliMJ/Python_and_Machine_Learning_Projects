@@ -1,73 +1,80 @@
-# Overview 
+# 🧠 Brain Size & 🤖Intelligence Classification
+This project implements a machine learning classification model to analyze the correlation between brain size and intelligence, utilizing industrial best practices for automation and scalability.
+## 📌 Overview 
 Built Classification models to analyse the correlation between brain size and Intelligence
 
+## 🚀 Key Features
+*	**Automated Preprocessing**: Utilizes Scikit-Learn Pipeline for seamless data transformation.
+*	**Feature Scaling**: Implements StandardScaler to normalize dataset values.
+*	**Decision Tree Classifier**: Leverages tree-based learning for predictive analysis.
+*	**Model Persistence**: Uses joblib for efficient saving and loading of trained models.
+*	**Data Visualization**: Provides comprehensive insights through correlation and performance plots. 
 
-It Follows industrial best practices by
-
-•	Automating preprocessing with Pipeline
-		
-•	Scaling the dataset values using StandardScalar
-		
-•	Used Decision Tree Classifier algorithm
-		
-•	Saving and loding trained model using job lib
-		
-•	Provided data visualisation
-
-## Dependencies:<br>
+## 🛠 Dependencies:<br>
 Install the required Python packages before running the project<br>
 pip install pandas numpy matplotlib scikit-learn joblib
 
-### DataSet information:<br>
-#### Features and Target:<br>
-Gender,Age Range,Head Size(cm^3),Brain Weight(grams)<br>
+### 📊 DataSet information:<br>
+The model analyzes the following features to determine classificat
+*	Gender
+*	Age Range,
+*	Head Size(cm^3),
+*	Brain Weight(grams)<br>
 
+---
 
+### ⚙️ Workflow:
 
-### Workflow:
+#### 1.	Data Preparation: <br>
+*	Loads MarvellousHeadBrain.csv into a Pandas DataFrame.
+*	Converts all categorical or object-based columns into numeric values for processing. 
 
-#### Data Preparation: <br>
-• Convert MarvellousHeadBrain.csv file into data frame<br>
-•	Convert all column values to numeric values
-
-#### Pipeline Construction:<br>
-  •	Step 1 : Standard scalar to scale all the features<br>
-	•	Step 2 : Used Decision Tree for result prediction
+#### 2. Pipeline Construction:<br>
+*	**Step 1(Scaling)** : Standard scalar to scale all the features<br>
+*	**Step 2(Classifier)** : Used Decision Tree for result prediction
   
-#### Model Training and Evaluation:<br>
-  •	Metrics: Accuracy,Confusion Matrix and Classification Report<br>
-	•	Feature Importance Plot: Shows most influential features 
+#### 3.	Model Training and Evaluation:<br>
+*	**Metrics**: Evaluated via Accuracy Score, Confusion Matrix, and a full Classification Report.
+*	**Feature Importance Plot**: Generates a plot to identify the most influential predictors. 
+ 
 
-#### Model Saving and Loading:<br>
-  •	Save the model with joblib <br>
-	•	Load models for future predictions without retraining<br>
+#### 4.	Model Saving and Loading:<br>
+*	Saves the trained pipeline as a _.joblib_ file to bypass retraining in production environments.
+---  
+#### 🏃Running the Project:<br>
+*	**The project reads data directly via**:
+  
+	import pandas as pd
+	df = pd.read_csv("MarvellousHeadBrain.csv")
 
-#### Running the Project:<br>
-  •	Load data set (only once)<br>
-		    pandas.read_csv(file_path)<br>
-  •	Train and evaluate model<br>
-	    	python3 HeadBrainClassification.py --train<br>
-  •	Test pretarined model<br>
-		    python3 HeadBrainClassification.py --test<br>  
+*	**Train and evaluate model**<br>
+	To train the model from scratch and view performance metrics:<br>
+	
+	 python3 HeadBrainClassification.py --train<br>
+*	**Test pretarined model**<br>
+  	To load the saved model and run predictions on test data:
+ 	
+	python3 HeadBrainClassification.py --test<br>  
 
-#### Expected Outputs saved:
+---
 
-**Expected testing data output** : <br>
-  PredictedResults.txt
+#### 📂 Expected Outputs saved:
+
+**Text Reports**
+*	**PredictedResults.txt**: Output of the model's predictions on test data.
+*	**classification_report.txt**: Detailed precision, recall, and F1-score breakdown. 
+
 
 **Visualisations**<br>
+*	**ConfusionMatrix.png**: Visual representation of true vs. predicted classes.
+*	**CoRelationMatrix.png**: Heatmap showing relationships between features. 
 
-  Confusion Matrix : ConfusionMatrix.png
-
-  Classification Report : classification_report.txt
-
-  Co Realtion Matrix : CoRelationMatrix.png
-
-**Model Storage**: Model saved as follows
-
+**Model Storage**: <br>
+Model saved as follows<br>
   -Decision Tree Classifier.joblib<br>
-    
- **Author**
+
+---	
+ **✍️Author**
 
  Vaishali M. Jorwekar<br>
  Date	:10 Oct 2025 
