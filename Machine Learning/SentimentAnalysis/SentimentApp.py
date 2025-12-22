@@ -49,8 +49,8 @@ def processAndStemText(text):
 #   Input Params     :  path = MODEL_PATH
 #   Output           :  model
 #   Description      :  Load the trained model
-#   Author          :   Vaishali M Jorwekar
-#   Date            :   19 Dec 2025
+#   Author           :  Vaishali M Jorwekar
+#   Date             :  19 Dec 2025
 #####################################################################################################
 def loadModel(modelName):  
     path=modelName+".joblib"
@@ -60,12 +60,12 @@ def loadModel(modelName):
     return model  
 
 #####################################################################################################
-#   Function name    :  loadModel
+#   Function name    :  analyseSentiment
 #   Input Params     :  sentimentPredicted
 #   Output           :  model
-#   Description      :  Load the trained model
-#   Author          :   Vaishali M Jorwekar
-#   Date            :   19 Dec 2025
+#   Description      :  Convert into String format
+#   Author           :  Vaishali M Jorwekar
+#   Date             :  19 Dec 2025
 #####################################################################################################
 def analyseSentiment(sentimentPredicted): 
     if sentimentPredicted == 2 :
