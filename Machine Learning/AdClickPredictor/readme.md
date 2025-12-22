@@ -1,70 +1,98 @@
-#  Overview: 
-This project Classification model predicting probability of user clicks on advertisement
-"Ad Click Prediction" using Logistic Regression,KNN and Decision Tree classifier
+# 🎯 Ad Click Prediction Model
 
-This project predicts whether a given user will click on the Ad or not using “Ad Click Data.csv”
-  It Follows  industrial best practices  by<br>
-      •	Automating preprocessing with Pipeline<br>
-      •	Scaling the dataset values using StandardScalar<br>
-      •	Used Logistic Regression,KNN and Decision Tree Classifier algorithms<br>
-      •	Saving and loding trained model using job lib<br>
-      •	Provided data visualisation<br><br>
-##  Dependencies:
-Install the required Python packages before running the project<br>
-      **_pip install pandas numpy matplotlib scikit-learn joblib_**<br>
-##  DataSet information:
+## 📌 Overview
+This project implements a binary classification system to predict the probability of a user clicking on an advertisement. By utilizing **Logistic Regression**, **K-Nearest Neighbors (KNN)**, and **Decision Tree** classifiers, the model identifies patterns in user behavior to optimize digital marketing strategies.
+
+### Key Features:
+*   **Automated Preprocessing:** Utilizes Scikit-Learn `Pipeline` for streamlined data workflows.
+*   **Feature Scaling:** Implements `StandardScaler` to ensure numerical stability across algorithms.
+*   **Multi-Model Approach:** Compares three different algorithms for optimal performance.
+*   **Persistence:** Uses `joblib` for efficient model saving and loading.
+*   **Visual Analysis:** Generates automated artifacts for model evaluation and feature importance.
+
+---
+
+## 🛠️ Dependencies
+Ensure you have Python installed, then run the following to install requirements:
+
+	pip install pandas numpy matplotlib scikit-learn joblib
+---
+
+## 📊 Dataset Information
+	The model uses Ad Click Data.csv, which contains the following attributes:
 ###  Features:
-  •  Daily Time Spent on Site<br>
-  •  Age<br>
-  •  Area Income<br>
-  •  Daily Internet Usage<br>
-  •  Ad Topic Line<br>
-  •  City<br>
-  •  Male<br>
-  •  Country<br>
-  •  Timestamp<br>
+  
+Feature	Description
+<table>
+  <thead>
+    <tr>
+      <th>Feature</th>
+      <th>Description</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td><strong>Daily Time Spent on Site</strong></td>
+      <td>Average minutes a user spends on the site</td>
+    </tr>
+    <tr>
+      <td><strong>Age</strong></td>
+      <td>Customer age in years</td>
+    </tr>
+    <tr>
+      <td><strong>Area Income</strong></td>
+      <td>Average income of the user's geographical area</td>
+    </tr>
+    <tr>
+      <td><strong>Daily Internet Usage</strong></td>
+      <td>Average minutes a user spends on the internet daily</td>
+    </tr>
+    <tr>
+      <td><strong>Ad Topic Line</strong></td>
+      <td>Headline of the advertisement</td>
+    </tr>
+    <tr>
+      <td><strong>Male</strong></td>
+      <td>Gender identifier (Binary)</td>
+    </tr>
+    <tr>
+      <td><strong>Country/City</strong></td>
+      <td>Geographical information</td>
+    </tr>
+    <tr>
+      <td><strong>Timestamp</strong></td>
+      <td>Time of interaction</td>
+    </tr>
+  </tbody>
+</table>
+
  
-###  Target
-Clicked on Ad<br><br>
-###  Workflow:
+###  Target Variable
+Clicked on Ad: 0 (No) or 1 (Yes)
+###  ⚙️ Workflow
 ###  Data Preparation:<br>
-  •	Convert Ad Click Data.csv file into data frame<br>
-	•	Clean data set<br>
-	•	Convert all column values to numeric values<br><br>
-####  Train-Test-Split:<br>
-  •	Split data set into 80% Training and 20% Testing set<br>
+1.	**Data Prep:** Data Prep :Load CSV, clean missing values, and convert categorical strings to numeric formats.
+2.	**Split**: 80% Train / 20% Test split.
+3.	**Pipeline**:
+   		* **Scale**: StandardScaler()
+   		* **Classify**: Fit LogisticRegression, KNeighborsClassifier, and DecisionTreeClassifier.
+4.	**Evaluation**: Generate Confusion Matrix, Accuracy, and Classification Reports.
+5.	**Save**: Export .joblib files for future inference.
 
-####  Pipeline Construction:<br>
-  •	Step 1 : Standard scalar to scale all the features<br>
-  •	Step 2 : Used Logistic Regression,KNN,Decision Tree for result prediction<br>
-####  Model Training and Evaluation:<br>
-  •	Metrics: Accuracy,Confusion Matrix and Classification Report<br> 
-  •	Feature Importance Plot: Shows most influential features<br> 
+   
+####   🚀 Usage
+**To Train and Evaluate**:
 
-####  Model Saving and Loading:<br>
-  •	Save the all three models with joblib<br>
-	•	Load models for future predictions without retraining<br> 
-####  Running the Project:<br>
-  •	Load data set (only once)<br>
-			pandas.read_csv(file_path)<br>
-  •	Train and evaluate model<br>
-			python3 AdClickPrediction.py --train<br>
-  •	Test pretarined model<br>
-			python3 AdClickPrediction.py --test<br>  
+	python3 AdClickPrediction.py --train
+**To Test Pre-trained Models**:
+	
+	python3 AdClickPrediction.py --test 
 			
-###  Expected Outputs saved:
-  ####  Expected testing data output :   *PredictedResults.txt*
-###  Visualisations : Saved at folder artifact_AdClickPredictor
-  Confusion Matrix                   :   *ConfusionMatrix.png*
-  
-  Classification Report              :   *classification_report.txt*
-  
-  Feature Importance                 :   *FeatureImportance.png* 
-
-###  Model Storage: Model saved as follows<br>
-  -Logistic Regression : artifact_AdClickPredictor/LogisticRegression.joblib<br>
-  -KNN : artifact_AdClickPredictor/KNN.joblib<br>
-  -Decision Tree : artifact_AdClickPredictor/Decision Tree Classifier.joblib<br>
+#### 📈 Visualizations & Artifacts
+The following artifacts are automatically generated in the artifact_AdClickPredictor/ folder:
+*	**Confusion Matrix**: visual breakdown of prediction accuracy.
+*	**Feature Importance**: Plot showing which factors (e.g., Age, Income) most influence a click.
+*	**Classification Report**: Detailed Precision, Recall, and F1-Score metrics.
 
 ###  Author:<br>
   Vaishali M. Jorwekar<br>
