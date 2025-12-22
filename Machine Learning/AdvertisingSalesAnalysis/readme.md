@@ -92,7 +92,7 @@ Install the required Python packages before running the project:
 </table>
 
     
- **Author**
+ **✍️Author**
 
  **Vaishali M. Jorwekar**<br>
  **Date	:25 Nov 2025**
