@@ -1,75 +1,92 @@
-# Overview 
+# 🏠 House Price Prediction Project
+This project implements an industrial-grade machine learning workflow to predict residential property prices in India. It leverages Scikit-Learn's Pipeline architecture to ensure reproducible preprocessing and model deployment
+# 📌 Overview 
+## 🛠️ Core Components
 Built Regression models to predict House Price
 
-It Follows industrial best practices by
+*	**Preprocessing**: Automated feature scaling using StandardScaler.
+*	**Algorithm**: Multivariate Linear Regression.
+*	**Serialization**: Model persistence using joblib for zero-retraining inference.
+*	**Interface**: Interactive web application powered by Streamlit. 
 
-•	Automating preprocessing with Pipeline
-		
-•	Scaling the dataset values using StandardScalar
-		
-•	Used Linear Regression algorithm
-		
-•	Saving and loding trained model using job lib
-		
-•	Provided data visualisation
-
-## Dependencies:<br>
+## 🚀 Dependencies:<br>
 Install the required Python packages before running the project<br>
 pip install pandas numpy matplotlib scikit-learn joblib streamlit
 
-### DataSet information:<br>
+### 📊 Dataset Schema:<br>
+The model processes 22 features, including geographical coordinates, structural attributes, and proximity to infrastructure (schools/airports).
 #### Features and Target:<br>
-  'id', 'Date', 'number of bedrooms', 'number of bathrooms',<br>
-  'living area', 'lot area', 'number of floors', 'waterfront present',<br>
-  'number of views', 'condition of the house', 'grade of the house',<br>
-  'Area of the house(excluding basement)', 'Area of the basement',<br>
-  'Built Year', 'Renovation Year', 'Postal Code', 'Lattitude',<br>
-  'Longitude', 'living_area_renov', 'lot_area_renov',
-  'Number of schools nearby', 'Distance from the airport', 'Price'
+<table>
+  <thead>
+    <tr>
+      <th align="left">Category</th>
+      <th align="left">Key Features</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td><b>Physical</b></td>
+      <td>Bedrooms, Bathrooms, Living Area, Basement Area, Number of Floors</td>
+    </tr>
+    <tr>
+      <td><b>Condition</b></td>
+      <td>House Grade, Condition, Built Year, Renovation Year</td>
+    </tr>
+    <tr>
+	<td><b>Location</b></td>
+      <td>Postal Code, Latitude, Longitude, Distance from Airport</td>
+    </tr>
+    <tr>
+      <td><b>Target</b></td>
+      <td>Price (Numeric)</td>
+    </tr>
+  	</tbody>
+	</table>
+
+---
+### 🚀 Workflow:
+
+#### 1. Data Preparation: <br>
+*	Loads "House Price India.csv" into a Pandas DataFrame.
+*	Forces numeric conversion for all columns to ensure mathematical compatibility.
+
+#### 2.	Pipeline Construction:<br>
+*	**Step 1** : StandardScaler to normalize feature scales.<br>
+*	**Step 2** : Used Linear Regression for price prediction
   
-  ### Workflow:
+#### 3.	Model Training and Evaluation:<br>
+The model is evaluated using standard regression metrics:
+*	R² Score: Accuracy of fit.
+*	RMSE: Root Mean Squared Error.
+*	Correlation Matrix: Heatmap visual for feature dependency.
 
-#### Data Preparation: <br>
-• Convert House Price India.csv file into data frame<br>
-•	Convert all column values to numeric values
-
-#### Pipeline Construction:<br>
-  •	Step 1 : Standard scalar to scale all the features<br>
-	•	Step 2 : Used Linear Regression for result prediction
+#### 4.	Model Saving and Loading:<br>
+*	**Export**: Model is serialized into Linear_Regression.joblib.
+*	**Import**: Allows instant inference on new data without retraining.
+---  
   
-#### Model Training and Evaluation:<br>
-  •	Metrics: Mean squared error,Root mean squared error,R^2 <br>
-  •	Co-Relation Matrix
-
-#### Model Saving and Loading:<br>
-  •	Save the model with joblib <br>
-	•	Load models for future predictions without retraining<br>
-
-#### Running the Project:<br>
-  •	Load data set (only once)<br>
-		    pandas.read_csv(file_path)<br>
-  •	Train and evaluate model<br>
-	    	python3 HousePricePrediction.py --train<br>
-  •	Test pretrained model<br>
-		    python3 HousePricePrediction.py --test<br> 
-  • Test App using Streamlit as well
-       streamlit run PricePrediction.py
+#### 🏃 Running the Project:<br>
+*	**Train and evaluate model**<br>
+	 python3 HousePricePrediction.py --train<br>
+*	**Test pretrained model**<br>
+	 python3 HousePricePrediction.py --test<br> 
+*	**Test App using Streamlit as well(Web Application)**
+     streamlit run PricePrediction.py
 
         
 
-#### Expected Outputs saved:
+#### 📂 Expected Outputs:
 
-**Visualisations**<br>
+**Visualizations**<br>
 
-  Co Realtion Matrix : CoRelationMatrix.png
-
-  Regression HousePricesRegressionPlot.png
-
+*	**Correlation Matrix**: CoRelationMatrix.png (Displays feature relationships).
+*	**Regression Plot**: HousePricesRegressionPlot.png (Comparison of Actual vs. Predicted values).
 **Model Storage**: Model saved as follows
 
-  -Linear Regression.joblib<br>
+**Model Files**<br>
+Linear Regression: Linear_Regression.joblib
     
- **Author**
+ **✍️Author**
 
  Vaishali M. Jorwekar<br>
  Date	:5 Nov 2025 
