@@ -1,64 +1,71 @@
-# Overview 
+## 🎬 Movie Recommendation System
+A content-based recommendation system that utilizes Unsupervised Machine Learning(K Means) to suggest movies based on content.
+### Overview 
+This project builds a recommendation engine using clustering and similarity measures. It processes movie textual data (genres, keywords, cast, crew) to identify patterns and group similar titles.
+
 Built a recommendation engine using clustering & similarity measures<br>
 
-This is content based recommendation system.
-
-•  Used TfidfVectorizer for converting the text data into numerical values
-		
-•  Used K Means clustering algorithm
-		
-•  Saving and loding trained model using job lib
-		
-•  Provided data visualisation
-
-•  Used Streamlit for testing the movie recommendation
-
-## Dependencies:<br>
+#### 🔑 Key Features:
+*	**Text Vectorization**: Uses TfidfVectorizer to convert text into numerical values.
+*	**Machine Learning**: Implements K-Means Clustering for categorization.
+*	**Similarity Scoring**: Uses Cosine Similarity to find the closest movie matches.
+*	**Interactive UI**: A Streamlit web application for real-time testing.
+*	**Data Visualization**: Includes PCA clusters, Correlation matrices, and Elbow Method plots.
+---
+#### 🛠  Dependencies:<br>
 Install the required Python packages before running the project<br>
-_pip install pandas numpy matplotlib scikit-learn joblib streamlit_<br>
-_update config.json_ for API Key
+*	pip install pandas numpy matplotlib scikit-learn joblib streamlit_<br>
+*	update config.json for API Key
 
-### DataSet information:<br>
-Used "tmdb_5000_movies.csv" and "tmdb_5000_credits.csv" movies dataset for building system
+#### 📂 DataSet information:<br>
+*	**tmdb_5000_movies.csv**: Contains budget, genres, homepage, id, keywords, etc.
+*	**tmdb_5000_credits.csv**: Contains movie_id, title, cast, and crew.
 
-### Workflow:
+---
 
-#### Data Preparation: <br>
-•  Convert tmdb_5000_movies.csv and tmdb_5000_credits.csv file into data frame<br>
-•  Combine both datasets<br>
-•  Select important fetaures only from both the datasets<br>
-•	 Clean data set,by removing spaces,Stem to reduce word count<br>
+#### ⚙️ Workflow:
+
+1.	#### Data Preparation: <br>
+*	Combine movie and credit datasets on the title/ID.
+*	Feature selection: Extract relevant tags (genres, overview, cast, crew).
+*	Cleaning: Remove spaces, handle null values, and apply Stemming to reduce words to their root form.
 	 
-####  Pre-Processing :<br>
-  •	Step 1 : Used TfidfVectorizer for convertion of text data<br>
-	•	Step 2 : Used K-Means for result prediction
+2.	####  Pre-Processing :<br>
+*	**Vectorization**: Transform processed text into a matrix of TF-IDF features.
+*	**Clustering**: Apply K-Means to predict movie groupings based on content density.
 
-#### Model Training and Evaluation:<br>
-  •	Found Optimal value of 'k'<br>
-  •	Plotted Co-Relation Matrix<br>
-  • Applied PCA and Plot clusters for visualisation<br>
-  • Used cosine similarity for finding similar movies<br>
+
+3.	####  Training & Evaluation:<br>
+*	**Optimal 'k'**: Determine the number of clusters using the Inertia Plot.
+*	**Visual Analysis**: Plot a Co-Relation Matrix and apply PCA (Principal Component Analysis) to visualize clusters  in 2D.
+*	**Similarity**: Compute a Cosine Similarity matrix for precise recommendations.
   
-#### Model Saving and Loading:<br>
-  •	Save the model with joblib <br>
-	•	Load models for future predictions without retraining<br>
-#### Running the Project:<br>
-  •  Load data set (only once)<br>
-      --->  pandas.read_csv(file_path)<br>
-  •  Train and evaluate model<br>
-	    --->  python3 MovieRecommondation.py --train<br>
-  •  Testing of the testModule<br>
-      --->  streamlit run MovieApp.py<br>
-#### Expected Outputs :
- **Visualisations**<br>
+4.	#### Model Persistence:<br>
+*	Save the trained model and vectorizer using joblib for fast loading without retraining.
+---
 
-  Co-Relation.png<br>
+#### 🚀 Running the Project
+*	**Train the Model**<br>
+	Run the training script to process data and generate model files:<br>
+	*	python3 MovieRecommondation.py --train<br>
+*	**Testing of the testModule**<br>
+    *	streamlit run MovieApp.py<br>
+---	
+	
+#### 📊Expected Outputs :
+**Visualisations**<br>
+The system generates the following visualizations in the images/ directory:
+*	**Co-Relation.png**: Heatmap of feature relationships.
+*	**ClusterVsInertiaPlot.png**: The "Elbow" graph used to find optimal K.
+*	**PCA Visualization**: A 2D scatter plot showing how movies are clustered.
 
-  ClusterVsInertiaPlot.png<br>
+---
+ #### 🎬 Movie UI :
+ 
   <img src="images/screenshot.png" alt="Project Screenshot" width="500"/>
 
-**Author**
-
+---
+#### ✍️ Author
  Vaishali M. Jorwekar<br>
  Date	:28 Nov 2025 
   
