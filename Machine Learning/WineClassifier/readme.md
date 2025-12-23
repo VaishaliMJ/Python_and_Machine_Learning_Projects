@@ -55,7 +55,7 @@ The dataset contains chemical analysis of wines grown in the same region but der
 *	**Feature Importance**: FeatureImportance.png (Random Forest analysis).
 *	**Predictions**: PredictedResults.txt (Output from test mode).
 
-##### Model Storage**: Model saved as follows
+##### Model Storage: Model saved as follows
 *	Random Forest:Random Forest Classifier.joblib<br>
 *	KNN : KNN.joblib
 ---    
