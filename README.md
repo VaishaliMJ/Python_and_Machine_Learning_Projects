@@ -1,4 +1,4 @@
-This is repository contains  codes of following.
+This repository contains following sub repositories
 <table>
       <thead>
         <tr>
