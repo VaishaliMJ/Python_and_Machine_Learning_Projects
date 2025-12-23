@@ -1,4 +1,8 @@
-# Overview 
+# 🏠 California House Price Prediction
+A machine learning project that builds a regression model to predict housing prices using the Scikit-Learn California Housing dataset. This project implements industrial best practices, including automated preprocessing pipelines and model persistence.
+## 🚀 Overview 
+This project uses a Linear Regression model to estimate house prices based on geographic and demographic features. It focuses on clean code structure, data visualization, and deployment readiness. 
+### 📌Key Features:
 Built Regression models to predict House Price using skleran dataset "california housing".Used Jupyter notebook
 
 It Follows industrial best practices by
@@ -13,11 +17,11 @@ It Follows industrial best practices by
 		
 •	Provided data visualisation
 
-## Dependencies:<br>
+### 🛠️Dependencies:<br>
 Install the required Python packages before running the project<br>
 pip install pandas numpy matplotlib scikit-learn pickle 
 
-### DataSet information:<br>
+### 📊 DataSet information:<br>
 #### Features and Target:<br>
   - MedInc        median income in block group
   - HouseAge      median house age in block group
@@ -27,43 +31,45 @@ pip install pandas numpy matplotlib scikit-learn pickle
   - AveOccup      average number of household members
   - Latitude      block group latitude
   - Longitude     block group longitude
-  - Price         House Prices 
-  ### Workflow:
+  - Price         House Prices
+---    
+### ⚙️ Workflow:
 
-#### Data Preparation: <br>
-• Convert "California Housing dataset" into data frame<br>
-•	Convert all column values to numeric values
+#### 1.	Data Preparation: <br>
+*	Load the dataset and convert it into a Pandas DataFrame.
+*	Ensure all column values are numeric and handle any missing data
 
-#### Pipeline Construction:<br>
-  •	Step 1 : Standard scalar to scale all the features<br>
-	•	Step 2 : Used Linear Regression for result prediction
+#### 2.	Pipeline Construction:<br>
+The model utilizes a Scikit-Learn Pipeline to ensure that data scaling and regression are treated as a single atomic step: 
+*	**Step 1** : Standard scalar to scale all the features<br>
+*	**Step 2** : Used Linear Regression for result prediction
   
-#### Model Training and Evaluation:<br>
-  •	Metrics: Mean squared error,Root mean squared error,R^2 <br>
-  •	Co-Relation Matrix
+#### 3.Model Training and Evaluation:<br>
+*	Mean Squared Error (MSE)
+*	Root Mean Squared Error (RMSE)
+*	R-squared (\(R^{2}\))
 
-#### Model Saving and Loading:<br>
-  •	Save the model with pickle <br>
-	•	Load models for future predictions without retraining<br>
+#### 4.	Model Saving and Loading:<br>
+*	The trained pipeline is serialized into **lr_model.pkl**.
+*	This allows for future predictions without the need to retrain the model. 
+---
+#### 🏃🏻‍♂️Running the Project:<br>
+*	Open the Jupyter Notebook to train the model:
+*	Run the cells to train, evaluate, and save lr_model.pkl. 
+---
 
-#### Running the Project:<br>
-  •	Load data set (only once)<br>
-  •	Train and evaluate model<br>
-  •	Test pretrained model<br>
-  • Test App using Streamlit as well
-
-#### Expected Outputs saved:
+#### 📂 Expected Outputs saved:
 
 **Visualisations**<br>
+*	**CoRelationMatrix.png**: A heatmap showing the correlation between features and the target price
 
-  Co Realtion Matrix : CoRelationMatrix.png
 
+**Model Storage**:<br> 
 
-**Model Storage**: Model saved as follows
+*	**lr_model.pkl**: The serialized Scikit-Learn pipeline containing the scaler and the linear regression coefficients.
 
-  -lr_model.pkl<br>
-    
- **Author**
+---   
+ **✍️Author**
 
  Vaishali M. Jorwekar<br>
  Date	:5 Nov 2025 
