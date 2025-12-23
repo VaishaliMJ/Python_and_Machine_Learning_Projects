@@ -1,4 +1,4 @@
-## Overview
+### 📌 Overview
 This folder contains the different case studies for machine learning algorithms
 <table>
       <thead>
