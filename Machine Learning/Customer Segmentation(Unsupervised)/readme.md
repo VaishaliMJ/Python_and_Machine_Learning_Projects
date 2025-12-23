@@ -36,11 +36,11 @@ AcceptedCmp1,AcceptedCmp2,Complain,Z_CostContact,Z_Revenue,Response<br>
 
 ---
 #### 💻 Running the Project:<br>
- **Train the Model**
-To load the data, train the algorithm, and generate visualizations:
+*	**Train the Model**
+	To load the data, train the algorithm, and generate visualizations:<br>
 	python3 CustomerSegmentation.py --train<br>
- **Launch the Dashboard**
-To test specific customer data points through the Streamlit interface:
+*	**Launch the Dashboard**
+	To test specific customer data points through the Streamlit interface:<br>
     streamlit run testModule.py<br>
 
  #### 📊 Expected Outputs saved:
