@@ -12,8 +12,6 @@ The project uses the Loan_default.csv dataset, which contains demographic, finan
 
 ---
 ## 🛠️ Tech Stack
-*  **Language**: Python 3.9+
-*  **Libraries**:
   *  **Data Handling**: Pandas, NumPy
   *  **Visualization**: Matplotlib, Seaborn
   *  **Modeling**: Scikit-learn, Gradient Boosting , Random Forest
