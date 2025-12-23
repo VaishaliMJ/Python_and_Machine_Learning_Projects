@@ -1,64 +1,86 @@
-#  Overview: 
-		  Built a classification model to predict passenger survival using Decision Trees and Logistic Regression 
-
-        This project predicts whether a given passenger survived or not
-          It Follows  industrial best practices  by
-          	•	Automating preprocessing with Pipeline
-          	•	Scaling the dataset values using StandardScalar
-          	•	Used Logistic Regression and Decision Tree Classifier algorithms
-          	•	Saving and loding trained model using job lib
-          	•	Provided data visualisation 
-
-##  Dependencies:
+## 🚢 Titanic Passenger Survival Prediction
+### 🚀 Overview: 
+This project builds a classification system to predict passenger survival using "Logistic Regression" and "Decision Tree" algorithms. 
+It adheres to industrial best practices by:
+*	**Automating Preprocessing**: Using Scikit-Learn Pipeline.
+*	**Feature Scaling**: Implementing StandardScaler for better model convergence.
+*	**Model Persistence**: Saving and loading models using joblib to avoid retraining.
+*	**Data Visualization**: Providing insights through correlation matrices and importance plots.
+---
+### 🛠 Dependencies:
 Install the required Python packages before running the project
 
 	pip install pandas numpy matplotlib scikit-learn joblib
 
-##  DataSet information:
-Passengerid,Age,Fare,Sex,sibsp,Parch,zero,Pclass,Embarked,Survived
+### 📊 DataSet information:
+The model processes the following features and Target Variable:
+*	**Features**-Passengerid,Age,Fare,Sex,sibsp,Parch,zero,Pclass,Embarked,
+*	**target** - Survived.
 
-###  Workflow:
-###  Data Preparation:
-		•	Convert TitanicDataset.csv file into data frame
-		•	Replace ‘0’ values in the columns by column mean() value
-		•	Convert all column values to numeric values
+---
 
-####  Train-Test-Split:
-		•	Split data set into 80% Training and 20% Testing set
+### 🔄  Workflow:
+1.	####  Data Preparation:
+*	**Ingestion**: Converts TitanicDataset.csv into a Pandas DataFrame.
+*	**Imputation**: Replaces 0 values in specific columns with the column mean().
+*	**Encoding**: Converts categorical string values into numeric values for model compatibility.
 
-####  Pipeline Construction:
-		•	Step 1 : Standard scalar to scale all the features
-		•	Step 2 : Used Logistic Regression and Decision Tree for result prediction
+2.	####  Train-Test-Split:
+*	Split data set into 80% Training and 20% Testing set
 
-####  Model Training and Evaluation:
-		•	Metrics: Accuracy,Confusion Matrix and Classification Report 
-		•	Feature Importance Plot: Shows most influential features 
+3.	####  Pipeline Construction:
+   The process is streamlined using a two-step pipeline:
+	*	**Step 1** : Standard scalar to scale all the features
+	*	**Step 2** : Used Logistic Regression and Decision Tree for result prediction
 
-####  Model Saving and Loading:
-		•	Save the all three models with joblib 
-		•	Load models for future predictions without retraining 
-
-####  Running the Project:
-	•	Load data set (only once)
-			pandas.read_csv(file_path)
-	•	Train and evaluate model
+4.	####  Evaluation & Metrics:
+	*	**Metrics**: Accuracy, Confusion Matrix, and Scikit-Learn Classification Report.
+	*	**Visuals**: A Feature Importance Plot identifies the most influential variables in predicting survival.
+5.	####  Model Saving and Loading:
+    *	Save the all three models with joblib 
+	*	Load models for future predictions without retraining 
+---
+#### 💻 Running the Project:
+*	##### Train and evaluate model
 			python3 TitanicPassengerSurvival.py --train
-  	•	Test pretarined model
+*	##### Test pre-trained model
 			python3 TitanicPassengerSurvival.py --test  
-			
-###  Expected Outputs saved:
-  ####  Expected testing data output :   *PredictedResults.txt*
-###  Visualisations
-  Confusion Matrix                   :   *ConfusionMatrix.png*
-  
-  Classification Report              :   *classification_report.txt*
-  
-  Co-Relation Matrix                 :   *CoRelationMatrix.png* 
 
-###  Model Storage: Model saved as follows
-	-Logistic Regression : LogisticRegression.joblib
-	-Decision Tree : Decision Tree Classifier.joblib
+---			
+####  📁 Expected Outputs:
 
-###  Author:
+  <table>
+  <thead>
+    <tr>
+      <th align="left">File</th>
+      <th align="left">Description</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td><code>PredictedResults.txt</code></td>
+      <td>Output of the latest test predictions</td>
+    </tr>
+    <tr>
+      <td><code>ConfusionMatrix.png</code></td>
+      <td>Heatmap of True Positives vs. False Positives</td>
+    </tr>
+    <tr>
+      <td><code>classification_report.txt</code></td>
+      <td>Precision, Recall, and F1-Score breakdown</td>
+    </tr>
+    <tr>
+      <td><code>CoRelationMatrix.png</code></td>
+      <td>Correlation heatmap of all features</td>
+    </tr>
+  </tbody>
+</table>
+
+
+####  💿Model Storage: Model saved as follows
+*	**Logistic Regression** : LogisticRegression.joblib
+*	**Decision Tree** : Decision Tree Classifier.joblib
+
+####  ✍️Author:
 	 Vaishali M. Jorwekar
 	 Date	:28 Sep 2025
