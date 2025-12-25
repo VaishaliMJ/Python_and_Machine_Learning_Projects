@@ -1,18 +1,18 @@
 
 # Advertisement Sales Prediction
 
-Built a Regression model to predict advertisement sales based on multi-channel advertising spends.
+Built a Regression model to predict advertisement sales.
 
 ## 🚀 Key Features
 This project follows industrial best practices for machine learning:
-- **Automated Preprocessing**: Uses `sklearn.pipeline.Pipeline` to bundle scaling and modeling.
-- **Feature Scaling**: Implements `StandardScalar` to normalize dataset values.
-- **Algorithm**: Utilizes **Linear Regression** for predictive analysis.
-- **Model Persistence**: Saves and loads trained models using `joblib`.
-- **Data Visualization**: Provides insights via correlation matrices and regression plots.
+- **Preprocessing**: Uses `sklearn.pipeline.Pipeline` to bundle scaling and modeling.
+- **Standards Scaling**: Implements `StandardScalar` to normalize dataset values.
+- **Algorithm Used**: **Linear Regression** for predictive analysis.
+- **Model Save And Reload**: Saves and loads trained models using `joblib`.
+- **Visualization**: Provides insights via correlation matrices and regression plots.
 
 ## 🛠 Dependencies
-Install the required Python packages before running the project:
+Install the required Python libraries before running the project:
 
 		pip install pandas numpy matplotlib scikit-learn joblib<br>
 ---
@@ -37,8 +37,8 @@ Install the required Python packages before running the project:
   -	**Visuals**: Generates a Correlation Matrix to identify feature importance.
   
 4. **Model Saving and Loading**:<br>
--	Saves the trained model as Linear Regression.joblib.
-- Allows for future predictions without the need for retraining.<br>
+*	Saves the trained model as Linear Regression.joblib.
+*	Allows for future predictions without the need for retraining.<br>
 ---
 
 ### 🚀 Running the Project
@@ -51,7 +51,7 @@ Install the required Python packages before running the project:
 	python3 AdvertisingSalesAnalysis.py --test<br> 
 
 
-### 📁 Project Outputs & Artifacts
+### 📁 Expected Outputs
 
 
 <table>
