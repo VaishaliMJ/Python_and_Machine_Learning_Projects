@@ -1,0 +1,76 @@
+# Overview 
+Built Regression models to predict House Price
+
+It Follows industrial best practices by
+
+•	Automating preprocessing with Pipeline
+		
+•	Scaling the dataset values using StandardScalar
+		
+•	Used Linear Regression algorithm
+		
+•	Saving and loding trained model using job lib
+		
+•	Provided data visualisation
+
+## Dependencies:<br>
+Install the required Python packages before running the project<br>
+pip install pandas numpy matplotlib scikit-learn joblib streamlit
+
+### DataSet information:<br>
+#### Features and Target:<br>
+  'id', 'Date', 'number of bedrooms', 'number of bathrooms',<br>
+  'living area', 'lot area', 'number of floors', 'waterfront present',<br>
+  'number of views', 'condition of the house', 'grade of the house',<br>
+  'Area of the house(excluding basement)', 'Area of the basement',<br>
+  'Built Year', 'Renovation Year', 'Postal Code', 'Lattitude',<br>
+  'Longitude', 'living_area_renov', 'lot_area_renov',
+  'Number of schools nearby', 'Distance from the airport', 'Price'
+  
+  ### Workflow:
+
+#### Data Preparation: <br>
+• Convert House Price India.csv file into data frame<br>
+•	Convert all column values to numeric values
+
+#### Pipeline Construction:<br>
+  •	Step 1 : Standard scalar to scale all the features<br>
+	•	Step 2 : Used Linear Regression for result prediction
+  
+#### Model Training and Evaluation:<br>
+  •	Metrics: Mean squared error,Root mean squared error,R^2 <br>
+  •	Co-Relation Matrix
+
+#### Model Saving and Loading:<br>
+  •	Save the model with joblib <br>
+	•	Load models for future predictions without retraining<br>
+
+#### Running the Project:<br>
+  •	Load data set (only once)<br>
+		    pandas.read_csv(file_path)<br>
+  •	Train and evaluate model<br>
+	    	python3 HousePricePrediction.py --train<br>
+  •	Test pretrained model<br>
+		    python3 HousePricePrediction.py --test<br> 
+  • Test App using Streamlit as well
+       streamlit run PricePrediction.py
+
+        
+
+#### Expected Outputs saved:
+
+**Visualisations**<br>
+
+  Co Realtion Matrix : CoRelationMatrix.png
+
+  Regression HousePricesRegressionPlot.png
+
+**Model Storage**: Model saved as follows
+
+  -Linear Regression.joblib<br>
+    
+ **Author**
+
+ Vaishali M. Jorwekar<br>
+ Date	:5 Nov 2025 
+  
