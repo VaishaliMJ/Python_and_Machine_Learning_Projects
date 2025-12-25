@@ -1,17 +1,16 @@
-# Breast Cancer Prediction Model
+# Breast Cancer Prediction System
 ## 📌 Overview
-This project focuses on predicting whether a patient's tumor is **malignant** or **benign** using machine learning. It implements industrial best practices, including automated preprocessing pipelines and model persistence.
-
+This project focuses on predicting whether a tumor is **malignant** or **benign** using machine learning. It implements industrial best practices as follows
 ### Key Features
-*   **Automated Preprocessing**: Utilizes Scikit-Learn `Pipeline` for seamless data flow.
-*   **Feature Scaling**: Implements `StandardScaler` to normalize dataset values.
-*   **Multi-Algorithm Approach**: Compares performance across Logistic Regression, SVM
-*   **Model Persistence**: Save and load trained models using `joblib`.
-*   **Comprehensive Visualization**: Includes Confusion Matrices and Feature Importance plots.
+*   **Preprocessing**: Uses Scikit-Learn `Pipeline` automating process.
+*   **Scaling**: Implements `StandardScaler` to normalize numerical dataset values.
+*   **Classification Algorithms**: Compares performance across Logistic Regression, SVM
+*   **Model Saving and loading**: Save and load trained models using `joblib`.
+*   **Visualization**: Includes Confusion Matrices and Feature Importance plots.
 ---
 
 ## 🛠 Dependencies
-Ensure you have Python installed, then run the following command to install required packages:
+Ensure Python installed, then run the following command to install required libraries:
 
 
 	pip install pandas numpy matplotlib scikit-learn joblib
@@ -19,7 +18,7 @@ Ensure you have Python installed, then run the following command to install requ
 
 ## 📊 Dataset Information
 **Features**
-The model utilizes 30 distinct features derived from tumor images, including:
+The dataset has 30 distinct features derived from tumor images, including:
 Mean, Error, and Worst values for: Radius, Texture, Perimeter, Area, Smoothness, Compactness, Concavity, Concave Points, Symmetry, and Fractal Dimension.<br>
 
 **Target**<br>
@@ -46,10 +45,10 @@ Mean, Error, and Worst values for: Radius, Texture, Perimeter, Area, Smoothness,
 	⁃	python BC_Prediction.py --test<br>
 ## 📂 Outputs & Model Storage
 ### Visualizations & Reports
-*	**ConfusionMatrix.png**: Visual representation of prediction accuracy.
-*	**FeatureImportance.png**: Plot showing the most influential features.
-*	**classification_report.txt**: Detailed precision, recall, and F1-score breakdown.
-*	**PredictedResults.txt**: Output from the testing phase.<br>
+*	**ConfusionMatrix.png**: Visual representation of Confusion Matrix and comparison
+*	**FeatureImportance.png**: Plot showing the most importatnt features.
+*	**classification_report.txt**: For all algorithms precision, recall, and F1-score are saved in text file.
+*	**PredictedResults.txt**: Output from the testing model.<br>
 #### Saved Models
 **Trained models are stored as:**
 *	Logistic Regression.joblib
