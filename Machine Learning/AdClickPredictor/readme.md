@@ -4,8 +4,8 @@
 This project aims to predict the probability of a user clicking on an advertisement. This assignment uses  **Logistic Regression**, **K-Nearest Neighbors (KNN)**, and **Decision Tree** classification algorithms. 
 
 ### Key Features:
-*   **Preprocessing:** Uses Scikit-Learn `Pipeline` for automated data workflows.
-*   **Feature Scaling:** Implements `StandardScaler` to ensure all numerical values are in range
+*   **Preprocessing:** Uses Scikit-Learn `Pipeline` for sequential work flow.
+*   **Scaling:** Implements `StandardScaler` to ensure all numerical values are in range
 *   **Different Models** Compare three different algorithms for performance.
 *   **Model Saving and Loading:** Uses `joblib` for efficient model saving and loading.
 *   **Visual Analysis:** Generates automated artifacts for model evaluation and feature importance.
@@ -52,7 +52,7 @@ Feature	Description
     </tr>
     <tr>
       <td><strong>Male</strong></td>
-      <td>Gender identifier (Binary)</td>
+      <td>Gender</td>
     </tr>
     <tr>
       <td><strong>Country/City</strong></td>
@@ -70,7 +70,7 @@ Feature	Description
 Clicked on Ad: 0 (No) or 1 (Yes)
 ###  ⚙️ Workflow
 ###  Data Preparation:<br>
-1.	**Data Prep:** : Load CSV, clean missing values, and convert categorical strings to numeric formats.
+1.	**Data Prep:** : Load CSV, clean missing values, and convert strings to numeric formats.
 2.	**Split**: Split the data set into 80% Train and  20% Test data set.
 3.	**Pipeline**:<br>
    		* **Scale**: StandardScaler()<br>
