@@ -1,5 +1,5 @@
 ## 📌 Overview
-This folder contains the different Python Automation Projects 
+This folder contains the Python Automation Projects 
 
 <table>
       <thead>
