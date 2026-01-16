@@ -5,9 +5,9 @@ This project groups retail customers into distinct clusters based on purchasing 
 
 ## Key Industrial Best Practices:
 *	**Feature Scaling**: Implemented StandardScaler for uniform data distribution.
-*	**Dimensionality Reduction**: Used PCA (Principal Component Analysis) for high-dimensional data visualization.
-*	**Model Persistence**: Utilized joblib for saving and loading the trained model.
-*	**Interactive UI**: Provided a Streamlit dashboard for real-time testing.
+*	**Dimension Reduction**: Used PCA (Principal Component Analysis) for high-dimensional data visualization.
+*	**Model Storage**: Utilized joblib for saving and loading the trained model.
+*	**UI for testing**: Provided a Streamlit dashboard for real-time testing.
 ---
 ## ⚙️ Installation & Dependencies:<br>
 Install the required Python packages before running the project<br>
