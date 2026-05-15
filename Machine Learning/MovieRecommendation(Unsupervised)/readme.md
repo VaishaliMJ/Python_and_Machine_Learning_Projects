@@ -63,6 +63,8 @@ The system generates the following visualizations in the images/ directory:
  #### 🎬 Movie UI :
  
   <img src="images/screenshot.png" alt="Project Screenshot" width="500"/>
+  <img src="images/screenshot1.png" alt="Project Screenshot" width="500"/>
+  <img src="images/screenshot2.png" alt="Project Screenshot" width="500"/>
 
 ---
 #### ✍️ Author
